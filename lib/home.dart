@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:project_snap/Widget/Custom_BottomNav.dart';
 import 'package:project_snap/Widget/Custom_Drawer.dart';
 import 'package:project_snap/Widget/cards.dart';
@@ -23,7 +24,9 @@ class _HomeState extends State<Home> {
         ),
       ),
       drawer: Custom_Drawer(),
-      body: SimpleCard(),
+      body: ListView(
+        children: [SimpleCard(), SimpleCard(), SimpleCard(), SimpleCard()],
+      ),
       bottomNavigationBar: Custom_BotNav(),
     );
   }
