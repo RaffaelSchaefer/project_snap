@@ -37,7 +37,16 @@ class SimpleCard extends StatelessWidget {
   }
 }
 
-class PreviewCard extends StatelessWidget {
+class PreviewCard extends StatefulWidget {
+  PreviewCard({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _PreviewCard createState() => _PreviewCard();
+}
+
+class _PreviewCard extends State<PreviewCard> {
   @override
   Widget build(BuildContext context) {
     return ListTile(
@@ -50,7 +59,16 @@ class PreviewCard extends StatelessWidget {
   }
 }
 
-class ComplexCard extends StatelessWidget {
+class ComplexCard extends StatefulWidget {
+  ComplexCard({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _ComplexCard createState() => _ComplexCard();
+}
+
+class _ComplexCard extends State<ComplexCard> {
   @override
   Widget build(BuildContext context) {
     return ListBody(
