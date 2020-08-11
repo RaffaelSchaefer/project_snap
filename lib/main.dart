@@ -108,34 +108,42 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: Container(
-        height: 200,
-        alignment: Alignment.topCenter,
-        padding: const EdgeInsets.all(20.0),
-        child: Card(
-            child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              ListTile(
-                title: new Text(
-                  "Hello Stranger",
-                  style: new TextStyle(
-                    fontSize: 40.0,
+      body: Column(
+        children: [
+          Container(
+            height: 200,
+            alignment: Alignment.topCenter,
+            padding: const EdgeInsets.all(20.0),
+            child: Card(
+                child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  ListTile(
+                    title: new Text(
+                      "Hello Stranger",
+                      style: new TextStyle(
+                        fontSize: 40.0,
+                      ),
+                    ),
                   ),
-                ),
+                  ListTile(
+                    title: new Text(
+                      "This App is in WIP Mode",
+                      style: new TextStyle(
+                        fontSize: 15.0,
+                      ),
+                    ),
+                  )
+                ],
               ),
-              ListTile(
-                title: new Text(
-                  "This App is in WIP Mode",
-                  style: new TextStyle(
-                    fontSize: 15.0,
-                  ),
-                ),
-              )
-            ],
+            )),
           ),
-        )),
+          Container(
+              padding: const EdgeInsets.only(left: 20.0),
+              alignment: Alignment.centerLeft,
+              child: Text("Welcome Back"))
+        ],
       ),
       bottomNavigationBar: new BottomNavigationBar(
           currentIndex: page_index,
@@ -162,18 +170,6 @@ class _MyHomePageState extends State<MyHomePage> {
           onTap: (index) {
             setState(() {
               page_index = index;
-              switch (index) {
-                case 0:
-                  break;
-                case 1:
-                  break;
-                case 2:
-                  break;
-                case 3:
-                  break;
-                default:
-                  break;
-              }
             });
           }),
     );
