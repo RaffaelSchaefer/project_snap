@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_snap/Widget/Custom_BottomNav.dart';
 import 'package:project_snap/Widget/Custom_Drawer.dart';
 import 'package:project_snap/Widget/cards.dart';
 
@@ -15,10 +16,15 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Hello"),
+      appBar: AppBar(
+        title: Text(
+          "Hello",
+          style: TextStyle(color: Colors.white),
         ),
-        drawer: Custom_Drawer(),
-        body: SimpleCard());
+      ),
+      drawer: Custom_Drawer(),
+      body: SimpleCard(),
+      bottomNavigationBar: Custom_BotNav(),
+    );
   }
 }
