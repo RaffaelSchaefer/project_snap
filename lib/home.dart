@@ -11,18 +11,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  String main_account = "https://thispersondoesnotexist.com/image";
-  String smurf_account = "https://thiscatdoesnotexist.com/";
-  int page_index = 0;
-
-  void UserSwitcher() {
-    String backup = main_account;
-    this.setState(() {
-      main_account = smurf_account;
-      smurf_account = backup;
-    });
-  }
-
   @override
-  Widget build(BuildContext) {}
+  Widget build(BuildContext) {
+    return Scaffold();
+  }
 }
