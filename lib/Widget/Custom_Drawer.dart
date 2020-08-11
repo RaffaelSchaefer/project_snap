@@ -22,7 +22,7 @@ class _Custom_Drawer extends State<Custom_Drawer> {
               onTap: () => print("this is John Doe"),
               child: CircleAvatar(
                 backgroundImage:
-                    NetworkImage("https://thispersondoesnotexist.com/"),
+                    NetworkImage("https://thispersondoesnotexist.com/image"),
               ),
             ),
             decoration: BoxDecoration(
