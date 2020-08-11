@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
       ),
       drawer: Custom_Drawer(),
       body: ListView(
-        children: [SimpleCard(), SimpleCard(), SimpleCard(), SimpleCard()],
+        children: [SimpleCard(), PreviewCard(), ComplexCard()],
       ),
       bottomNavigationBar: Custom_BotNav(),
     );
