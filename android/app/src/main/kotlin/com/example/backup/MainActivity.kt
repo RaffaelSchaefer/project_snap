@@ -1,4 +1,4 @@
-package com.example.project_snap
+package com.example.backup
 
 import io.flutter.embedding.android.FlutterActivity
 

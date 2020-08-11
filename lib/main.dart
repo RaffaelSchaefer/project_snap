@@ -29,15 +29,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  String MainAccount = "https://thispersondoesnotexist.com/image";
-  String SmurfAccount = "https://thiscatdoesnotexist.com/";
+  String main_account = "https://thispersondoesnotexist.com/image";
+  String smurf_account = "https://thiscatdoesnotexist.com/";
   int page_index = 0;
 
   void UserSwitcher() {
-    String Backup = MainAccount;
+    String backup = main_account;
     this.setState(() {
-      MainAccount = SmurfAccount;
-      SmurfAccount = Backup;
+      main_account = smurf_account;
+      smurf_account = backup;
     });
   }
 
@@ -57,14 +57,14 @@ class _MyHomePageState extends State<MyHomePage> {
               currentAccountPicture: new GestureDetector(
                 onTap: () => print("this is John Doe"),
                 child: new CircleAvatar(
-                  backgroundImage: new NetworkImage(MainAccount),
+                  backgroundImage: new NetworkImage(main_account),
                 ),
               ),
               otherAccountsPictures: [
                 new GestureDetector(
                   onTap: () => UserSwitcher(),
                   child: new CircleAvatar(
-                    backgroundImage: new NetworkImage(SmurfAccount),
+                    backgroundImage: new NetworkImage(smurf_account),
                   ),
                 )
               ],
