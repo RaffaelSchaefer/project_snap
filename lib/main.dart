@@ -146,9 +146,6 @@ class _MyHomePageState extends State<MyHomePage> {
                 "Welcome Back",
                 style: new TextStyle(fontSize: 50.0),
               )),
-          Image(
-              image: new NetworkImage(
-                  "https://vignette.wikia.nocookie.net/youtube/images/4/45/Misha.jpg/revision/latest/top-crop/width/360/height/450?cb=20180903133646"))
         ],
       ),
       bottomNavigationBar: new BottomNavigationBar(
