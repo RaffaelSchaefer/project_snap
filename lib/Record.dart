@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:project_snap/Widget/Custom_BottomNav.dart';
 
-class Home extends StatefulWidget {
-  Home({Key key, this.title}) : super(key: key);
+class Record extends StatefulWidget {
+  Record({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _HomeState createState() => _HomeState();
+  _RecordState createState() => _RecordState();
 }
 
-class _HomeState extends State<Home> {
+class _RecordState extends State<Record> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

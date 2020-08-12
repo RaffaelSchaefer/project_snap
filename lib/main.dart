@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:project_snap/Logic/route_generator.dart';
-import 'package:project_snap/home.dart';
 
 void main() {
   runApp(MyApp());

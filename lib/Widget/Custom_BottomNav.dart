@@ -44,6 +44,8 @@ class _Custom_BotNav extends State<Custom_BotNav> {
               Navigator.of(context).pushNamed("/edit");
               break;
             case 2:
+              Navigator.of(context).pushNamed("/record");
+              break;
             default:
               print("Error : Wrong index");
           }

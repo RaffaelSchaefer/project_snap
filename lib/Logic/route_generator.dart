@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_snap/Record.dart';
 import 'package:project_snap/home.dart';
 import 'package:project_snap/Edit.dart';
 
@@ -11,6 +12,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => Home());
       case '/edit':
         return MaterialPageRoute(builder: (_) => Edit());
+      case '/record':
+        return MaterialPageRoute(builder: (_) => Record());
       default:
         return _errorRoute();
     }
