@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:project_snap/Widget/Custom_AppBar.dart';
 import 'package:project_snap/Widget/Custom_BottomNav.dart';
 import 'package:project_snap/Widget/Custom_Drawer.dart';
-import 'package:project_snap/Widget/cards.dart';
+import 'package:project_snap/Widget/Custom_Cards.dart';
 
 class Edit extends StatefulWidget {
   Edit({Key key, this.title}) : super(key: key);

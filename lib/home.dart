@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:project_snap/Widget/Custom_BottomNav.dart';
+import 'package:project_snap/Widget/Custom_Texts.dart';
 
 class Home extends StatefulWidget {
   Home({Key key, this.title}) : super(key: key);
@@ -24,6 +25,11 @@ class _HomeState extends State<Home> {
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
                 colors: [Colors.orange, Colors.red])),
+        child: ListView(
+          children: [
+            MainText(),
+          ],
+        ),
       ),
       bottomNavigationBar: Custom_BotNav(),
     );
