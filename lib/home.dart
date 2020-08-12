@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:project_snap/Widget/Custom_BottomNav.dart';
+import 'package:project_snap/Widget/Custom_Cards.dart';
 import 'package:project_snap/Widget/Custom_Texts.dart';
 
 class Home extends StatefulWidget {
@@ -28,6 +29,10 @@ class _HomeState extends State<Home> {
         child: ListView(
           children: [
             MainText(),
+            Divider(),
+            SubText(),
+            SimpleCard(),
+            SimpleCard()
           ],
         ),
       ),
