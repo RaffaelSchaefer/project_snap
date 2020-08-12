@@ -5,16 +5,16 @@ import 'package:project_snap/Widget/Custom_BottomNav.dart';
 import 'package:project_snap/Widget/Custom_Drawer.dart';
 import 'package:project_snap/Widget/cards.dart';
 
-class Home extends StatefulWidget {
-  Home({Key key, this.title}) : super(key: key);
+class Edit extends StatefulWidget {
+  Edit({Key key, this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _HomeState createState() => _HomeState();
+  _EditState createState() => _EditState();
 }
 
-class _HomeState extends State<Home> {
+class _EditState extends State<Edit> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,6 +27,14 @@ class _HomeState extends State<Home> {
                 begin: Alignment.topRight,
                 end: Alignment.bottomLeft,
                 colors: [Colors.orange, Colors.red])),
+        child: ListView(
+          children: [
+            SimpleCard(),
+            SimpleCard(),
+            SimpleCard(),
+            SimpleCard(),
+          ],
+        ),
       ),
       bottomNavigationBar: Custom_BotNav(),
     );

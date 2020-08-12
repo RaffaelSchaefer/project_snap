@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_snap/home.dart';
-import 'package:project_snap/test.dart';
+import 'package:project_snap/Edit.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -9,22 +9,15 @@ class RouteGenerator {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => Home());
-      case '/test':
-        if (args is String) {
-          return MaterialPageRoute(
-              builder: (_) => Test(
-                    data: args,
-                  ));
-        } else {
-          return _errorRoute();
-        }
-        break;
+      case '/edit':
+        return MaterialPageRoute(builder: (_) => Edit());
       default:
         return _errorRoute();
     }
   }
 
   static Route<dynamic> _errorRoute() {
+    print("Error 404: Path not Found");
     return MaterialPageRoute(builder: (_) {
       return Scaffold(
         body: Container(

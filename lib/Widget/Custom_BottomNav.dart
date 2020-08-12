@@ -16,29 +16,37 @@ class _Custom_BotNav extends State<Custom_BotNav> {
     return BottomNavigationBar(
         currentIndex: page_index,
         type: BottomNavigationBarType.fixed,
+        backgroundColor: Color.fromARGB(255, 255, 255, 255),
         iconSize: 30,
         items: [
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
               title: Text("Home"),
-              backgroundColor: Colors.orange),
+              backgroundColor: Color.fromARGB(255, 255, 255, 255)),
           BottomNavigationBarItem(
               icon: Icon(Icons.text_fields),
-              title: Text("Skripts"),
-              backgroundColor: Colors.orange),
+              title: Text("Edit"),
+              backgroundColor: Color.fromARGB(255, 255, 255, 255)),
           BottomNavigationBarItem(
               icon: Icon(Icons.camera),
-              title: Text("Caputure Mode"),
-              backgroundColor: Colors.orange),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.people),
-              title: Text("Team"),
-              backgroundColor: Colors.orange),
+              title: Text("Record"),
+              backgroundColor: Color.fromARGB(255, 255, 255, 255)),
         ],
         onTap: (index) {
           setState(() {
             page_index = index;
           });
+          switch (index) {
+            case 0:
+              Navigator.of(context).pushNamed("/");
+              break;
+            case 1:
+              Navigator.of(context).pushNamed("/edit");
+              break;
+            case 2:
+            default:
+              print("Error : Wrong index");
+          }
         });
   }
 }
